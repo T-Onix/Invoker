@@ -25,4 +25,4 @@ if not os.path.isfile("key.txt") :
 
 
 key = load_key()
-encrypt("img.jpg", key)
+# encrypt("img.jpg", key)
