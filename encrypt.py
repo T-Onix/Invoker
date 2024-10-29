@@ -20,9 +20,9 @@ def encrypt(name , key):
         open(name , "wb").write(e_DATA)
 
 
-if not os.path.isfile("key.txt") :
-    generate_key()
+# if not os.path.isfile("key.txt") :
+#     generate_key()
 
 
-key = load_key()
+# key = load_key()
 # encrypt("img.jpg", key)
